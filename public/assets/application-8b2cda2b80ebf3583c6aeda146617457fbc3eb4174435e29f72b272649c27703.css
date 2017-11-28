@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Droid+Serif:400,400italic);
+/* line 16, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+body {
+  background-color: white;
+  font-family: 'Droid Serif', serif;
+  font-size: 14px;
+  color: #8ea7c2;
+}
+
+/* line 23, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+a, a:focus, a:hover, a:visited {
+  color: #b8cca6;
+}
+
+/* line 26, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 15px 0px;
+  font-size: 3em;
+}
+
+/* line 35, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.container {
+  background-color: orange;
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 700px;
+}
+
+/* line 42, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.row {
+  margin: 2px 0px;
+  padding: 5px;
+  line-height: 50px;
+}
+
+/* line 48, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  color: #5c5457;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 61, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu #online .circle {
+  background-color: #b8cca6;
+}
+/* line 66, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu #offline .circle {
+  background-color: #8ea7c2;
+}
+/* line 70, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu .active, .menu .selector:hover {
+  width: 65px !important;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  cursor: pointer;
+}
+/* line 75, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu .selector {
+  line-height: 40px;
+  height: 20px;
+  background-color: orange;
+  padding: 0px 5px;
+  margin: 2px 0px;
+  width: 40px;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+/* line 85, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu .selector .circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #5c5457;
+  border: 1px solid #5c5457;
+  float: left;
+  margin: 5px 5px 5px 0px;
+}
+/* line 94, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.menu .selector p {
+  display: inline-block !important;
+  height: 30px;
+  margin: 0px;
+  width: 30px !important;
+}
+
+/* line 103, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+#header, #footer {
+  position: relative;
+  background-color: #5c5457;
+  color: orange;
+  padding: 5px 65px 5px 15px;
+}
+
+/* line 110, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 3px solid orange;
+}
+
+/* line 117, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.offline {
+  background-color: #4a5e82;
+}
+
+/* line 121, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.online {
+  background-color: #b8cca6;
+  color: #5c5457;
+}
+/* line 124, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+.online a, .online a:focus, .online a:hover, .online a:visited {
+  color: #4a5e82;
+}
+
+/* line 129, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+#streaming {
+  font-style: italic;
+}
+
+/* line 133, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+#name, #streaming {
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* line 142, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+  .container {
+    margin: 10px auto;
+  }
+
+  /* line 146, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+  #name, #streaming {
+    line-height: 50px;
+    height: 50px;
+  }
+
+  /* line 151, /home/julien/THP/twitch/app/assets/stylesheets/home.scss */
+  #header {
+    padding-left: 65px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+

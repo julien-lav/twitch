@@ -3,12 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-$background: #ecf0e7;
-$container: #e1e1e6;
-$online: #b8cca6;
+$background: white;
+$container: orange;
+$online: green;
 $header: #5c5457;
 $text: #8ea7c2;
-$offline: #4a5e82;
+$offline: red;
 $grow: width 0.4s linear;
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Droid+Serif:400,400italic);
@@ -32,12 +32,20 @@ h1 {
   margin: 15px 0px;
   font-size: 3em;
 }
+h3 {
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+.clear {
+	clear: both;
+}
 
 .container {
   background-color: $container;
   margin: 0px auto;
   padding: 0px;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .row {
@@ -80,9 +88,6 @@ h1 {
     padding: 0px 5px;
     margin: 2px 0px;
     width: 20px;
-    overflow: hidden;
-    float: right;
-    clear: right;
     transition: $grow;
     .circle {
       height: 10px;
